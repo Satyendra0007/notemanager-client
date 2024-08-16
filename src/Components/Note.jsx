@@ -27,7 +27,7 @@ export default function Note({ index, _id, title, priority, description, handleD
     if (priority === "Important")
       return "red"
     else if (priority === "Medium")
-      return "yellow"
+      return "orange"
     else
       return "green"
   }
@@ -41,8 +41,8 @@ export default function Note({ index, _id, title, priority, description, handleD
     <>
       <h2 id={`accordion-collapse-heading-${index}`}>
         <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target={`#accordion-collapse-body-${index}`} aria-expanded="true" aria-controls={`accordion-collapse-body-${index}`}>
-          <span >{title}</span>
-          <span className="text-white text-xs font-semibold px-2.5 py-1 rounded-full dark:bg-red-900 dark:text-white" style={{ backgroundColor: addColour(priority) }}>{priority}</span>
+          <span className="font-bold capitalize">{title}</span>
+          <span className="text-white text-xs font-semibold w-20 py-1.5 rounded-full " style={{ backgroundColor: addColour(priority) }}>{priority}</span>
           <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
           </svg>
