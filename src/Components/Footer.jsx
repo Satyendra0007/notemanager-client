@@ -4,7 +4,7 @@ import { IoDocumentLockOutline } from "react-icons/io5";
 
 export default function Footer() {
   return (
-    <footer className='bg-rose-100'>
+    <footer className='bg-rose-100 sticky bottom-0 w-full '>
       <div className="logo">
         <div className="flex items-center justify-center text-base">
           <span className='font-bold mb-1'>&lt;</span>
