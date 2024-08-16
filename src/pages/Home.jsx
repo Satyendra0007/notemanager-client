@@ -6,14 +6,6 @@ import Button from '../Components/Button';
 
 export default function Home() {
 
-
-  if (process.env.NODE_ENV === 'development') {
-    console.log('App is running in development mode');
-  } else {
-    console.log('App is running in production mode');
-  }
-
-
   return (
     <div className='container mx-auto min-h-[84vh] flex flex-col justify-center items-center '>
       <div className='md:max-w-3xl m-auto  py-10  '>

@@ -32,8 +32,8 @@ export default function ContextWrapper({ children }) {
   }
 
   useEffect(() => {
-    fetchUserData();
-    console.log("running")
+    if (token)
+      fetchUserData();
   }, [token])
 
   return (
